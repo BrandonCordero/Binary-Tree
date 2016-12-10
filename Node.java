@@ -1,0 +1,53 @@
+/* 
+ * Node.java
+ * written by csi/cen 213 Brandon fall 2016
+ * 
+ * Implements node to be used in Tree class
+ */
+public class Node {
+  //properties
+  private int key;
+  private String name;
+  
+  private Node left;
+  private Node right;
+  
+  // getters and setters
+  public Node(int key, String name)
+  {
+    this.key = key;
+    this.name = name; 
+  }
+   public int getKey(){
+    return this.key;
+  }
+  
+  public String getName(){
+    return this.name;
+  }
+
+  public Node getLeft(){
+    return this.left;
+  }
+  public Node getRight(){
+    return this.right;
+  }
+  
+  public void setKey(int newKey) {
+    this.key = newKey;
+  }
+  
+  public void setName(String newName) {
+    this.name = newName;
+  }
+  public void setLeft(Node newLeft) {
+    this.left = newLeft;
+  }
+  public void setRight(Node newRight) {
+    this.right = newRight;
+  }
+  public String toString()
+  {
+        return name + " has the key " + key;
+  }
+}
