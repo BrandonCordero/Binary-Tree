@@ -1,0 +1,49 @@
+public class Tree{
+  Node root;
+  
+  // Getters and Setters
+   public Node getRoot(){
+    return this.root;
+  }
+  public void setRoot(Node newRoot){
+   this.root = newRoot; 
+  }
+  // Methods
+  // Creates Center Node and adds new nodes to tree
+  public void addNode(int key, String name)
+  {
+    Node newNode = new Node(key, name);
+    if (root == null)
+    {
+     root = newNode; 
+    }
+    else
+    {
+      Node centerNode = root;
+      Node parent;
+      
+      while(true)
+      {
+        parent = centerNode;
+      }
+      // Puts Nodes on Left side of tree
+      if(key < centerNode.key){
+        centerNode = centerNode.left
+          if(centerNode == null){
+          parent.left = newNode;
+          return;
+        }
+        
+    
+  }
+      else{
+        centerNode = cenerNode.right;
+        if (centerNode == null){
+          parent.right = newNode;
+          return;
+        }
+          
+   }
+  }
+ }
+}
