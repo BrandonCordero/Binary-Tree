@@ -6,20 +6,20 @@
  */
 public class Node {
   //properties
-  private int key;
+  private int count;
   private String name;
   
   private Node left;
   private Node right;
   
   // getters and setters
-  public Node(int key, String name)
+  public Node(int count, String name)
   {
-    this.key = key;
+    this.count = count;
     this.name = name; 
   }
-   public int getKey(){
-    return this.key;
+   public int getCount(){
+    return this.count;
   }
   
   public String getName(){
@@ -33,8 +33,8 @@ public class Node {
     return this.right;
   }
   
-  public void setKey(int newKey) {
-    this.key = newKey;
+  public void setCount(int newCount) {
+    this.count = newCount;
   }
   
   public void setName(String newName) {
@@ -48,6 +48,6 @@ public class Node {
   }
   public String toString()
   {
-        return name + " has the key " + key;
+        return name + " has the count " + count;
   }
 }
